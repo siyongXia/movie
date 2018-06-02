@@ -1,0 +1,23 @@
+{
+  "name": "movie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siyongXia/movie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siyongXia/movie/issues"
+  },
+  "homepage": "https://github.com/siyongXia/movie#readme",
+  "dependencies": {
+    "koa": "^2.5.1"
+  }
+}
