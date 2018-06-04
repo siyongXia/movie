@@ -4,6 +4,10 @@ const { resolve } = require('path')
 
 const views = require('koa-views')
 
+const Static = require('koa-static')
+
+app.use(Static(resolve(__dirname,'./static')))
+
 app.use(views(resolve(__dirname,'./views'), {
 	extension: 'pug'
 }))

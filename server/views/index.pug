@@ -2,11 +2,101 @@ extends ./layout/default
 
 block title
 	title hello pug 
- 
 block content 
-	.container
+	style.
+		.card {
+			margin-bottom: 10px;
+		}
+		.card-image {
+			height: 200px;
+		}
+	include ./includes/header
+	.container-fluid
 		.row
-			.col-md-8
-				h1 hello #{name}
-			.col-md-4
-				h3 welcome to my #{place}
+			.sidebar.col-md-3
+				.panel-group(id="accordion",role="tablist", aria-multiselectable="true")
+					.panel.panel-default
+						.panel-heading(role="tab",id="headingOne")
+							h4.panel-title
+								a(role="button",data-toggle="collapse",data-parent="#accordion",href="#collapseOne",aria-expanded="true",aria-controls="collapseOne") 分类
+						.panel-collapse.collapse.in(id="collapseOne",role="tabpanel",aria-labelledby="headingOne")
+							.panel-body 子分类
+
+			.content.col-md-9
+				.row
+					.col-md-6
+						.card
+							img.card-image(src='//puui.qpic.cn/vpic/0/j0673roknz3_160_90_3.jpg/0',data-video='/test.mp4')
+							h4.card-title 电影标题
+							p.card-desc 电影描述
+					.col-md-6
+						.card
+							img.card-image(src='//puui.qpic.cn/vpic/0/j0673roknz3_160_90_3.jpg/0',data-video='/test.mp4')
+							h4.card-title 电影标题
+							p.card-desc 电影描述
+				.row
+					.col-md-6
+						.card
+							img.card-image(src='//puui.qpic.cn/vpic/0/j0673roknz3_160_90_3.jpg/0',data-video='/test.mp4')
+							h4.card-title 电影标题
+							p.card-desc 电影描述
+					.col-md-6
+						.card
+							img.card-image(src='//puui.qpic.cn/vpic/0/j0673roknz3_160_90_3.jpg/0',data-video='/test.mp4')
+							h4.card-title 电影标题
+							p.card-desc 电影描述
+				.row
+					.col-md-6
+						.card
+							img.card-image(src='//puui.qpic.cn/vpic/0/j0673roknz3_160_90_3.jpg/0',data-video='/test.mp4')
+							h4.card-title 电影标题
+							p.card-desc 电影描述
+					.col-md-6
+						.card
+							img.card-image(src='//puui.qpic.cn/vpic/0/j0673roknz3_160_90_3.jpg/0',data-video='/test.mp4')
+							h4.card-title 电影标题
+							p.card-desc 电影描述
+				.row
+					.col-md-6
+						.card
+							img.card-image(src='//puui.qpic.cn/vpic/0/j0673roknz3_160_90_3.jpg/0',data-video='/test.mp4')
+							h4.card-title 电影标题
+							p.card-desc 电影描述
+					.col-md-6
+						.card
+							img.card-image(src='//puui.qpic.cn/vpic/0/j0673roknz3_160_90_3.jpg/0',data-video='/test.mp4')
+							h4.card-title 电影标题
+							p.card-desc 电影描述
+	#exampleModal.modal.fade(tabindex="-1",role="dialog",aria-labelledby="exampleModalLabel",aria-hidden="true")
+		.modal-dialog(role="document")
+			.modal-content
+				.modal-header
+					h5.modal-title(id="exampleModalLabel") Modal title
+					button.close(type="button",data-dismiss="modal",aria-label="Close")
+						<span aria-hidden="true">&times;</span>
+				#video.modal-body
+					p 12121212
+				.modal-footer
+					button.btn.btn-secondary(type="button",data-dismiss="modal") Close
+					button.btn.btn-primary(type="button",data-dismiss="modal") Save changes
+	include ./includes/script
+	script.
+		$(function(){
+			var player = null;
+			$('.card-image').on('click',function(){
+				$('#exampleModal').modal('show');
+				var image = $(this).attr('src');
+				var video = $(this).data('video');
+				if(!player) {
+					player = new DPlayer({
+						container: document.getElementById('video'),
+						screenshot: true,
+						hotkey: true,
+						video: {
+			        url: video,
+			        pic: image,
+				    }
+					})
+				}
+			})
+		})

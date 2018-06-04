@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node server/index.js",
+    "parcel": "rm -rf parcel/dist &&  parcel build parcel/index.html --no-cache -d parcel/dist --public-url /dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +20,12 @@
   "homepage": "https://github.com/siyongXia/movie#readme",
   "dependencies": {
     "koa": "^2.5.1",
+    "koa-static": "^4.0.3",
     "koa-views": "^6.1.4",
-    "pug": "^2.0.3"
+    "parcel-bundler": "^1.8.1",
+    "pug": "^2.0.3",
+    "puppeteer": "^1.4.0",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5"
   }
 }
