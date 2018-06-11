@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "nanoid": "^1.0.3",
+    "qiniu": "^7.1.7"
+  }
+}

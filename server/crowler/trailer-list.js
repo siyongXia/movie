@@ -38,7 +38,7 @@ const sleep = (time) => {
   		let name = $(item).find('p').text().replace(/\s/g,'');
   		let rate = $(item).find('strong').text().replace(/\s/g,'');
   		links.push({
-  			id,
+  			doubanId: id,
   			poster,
   			name,
   			rate

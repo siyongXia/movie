@@ -1,10 +1,24 @@
 const Koa = require('koa')
-const app = new Koa()
 const { resolve } = require('path')
+const { connect, initSchemes } = require('./database/init')
 
+console.log(initSchemes);
 const views = require('koa-views')
-
 const Static = require('koa-static')
+const mongoose = require('mongoose')
+
+const app = new Koa()
+
+;(async () => {
+	await connect()
+	
+	initSchemes()
+
+	// require('./tasks/movie')
+	// require('./tasks/api')
+	require('./tasks/trailer')
+
+})();
 
 app.use(Static(resolve(__dirname,'./static')))
 
