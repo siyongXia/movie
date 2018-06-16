@@ -4,16 +4,76 @@
 		"selected_items":
 		[
 			[
-				"win",
-				"windowHeight〔variable〕"
+				"mov",
+				"movie"
 			],
 			[
-				"con",
-				"content〔variable〕"
+				"find",
+				"findOne"
+			],
+			[
+				"mo",
+				"movies"
+			],
+			[
+				"d",
+				"doubanId"
+			],
+			[
+				"ca",
+				"cate"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"da",
+				"date"
+			],
+			[
+				"pa",
+				"part"
+			],
+			[
+				"ini",
+				"initSchemes"
+			],
+			[
+				"re",
+				"reject"
+			],
+			[
+				"is",
+				"isMatch"
+			],
+			[
+				"mong",
+				"mongoose〔variable〕"
 			],
 			[
 				"co",
-				"cover"
+				"coverData"
+			],
+			[
+				"cov",
+				"coverData"
+			],
+			[
+				"conf",
+				"config〔variable〕"
+			],
+			[
+				"vie",
+				"videoUrl"
+			],
+			[
+				"con",
+				"config〔variable〕"
+			],
+			[
+				"win",
+				"windowHeight〔variable〕"
 			],
 			[
 				"vide",
@@ -30,10 +90,6 @@
 			[
 				"res",
 				"result"
-			],
-			[
-				"re",
-				"return"
 			],
 			[
 				"scr",
@@ -328,10 +384,6 @@
 				"cityList"
 			],
 			[
-				"pa",
-				"params"
-			],
-			[
 				"fil",
 				"fileList"
 			],
@@ -462,58 +514,6 @@
 			[
 				"padd",
 				"padding"
-			],
-			[
-				"min",
-				"min-height"
-			],
-			[
-				"inl",
-				"inline-block"
-			],
-			[
-				"pad",
-				"padding"
-			],
-			[
-				"cur",
-				"cursor"
-			],
-			[
-				"proto",
-				"prototype.js"
-			],
-			[
-				"user",
-				"userInfo"
-			],
-			[
-				"mix",
-				"mixins/"
-			],
-			[
-				"im",
-				"import"
-			],
-			[
-				"ins",
-				"insuranceProduct.js"
-			],
-			[
-				"io",
-				"import"
-			],
-			[
-				"cus",
-				"CommerCustomer"
-			],
-			[
-				"ta",
-				"TrafficCustomer"
-			],
-			[
-				"traffic",
-				"traffic_type"
 			]
 		]
 	},
@@ -586,8 +586,31 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/video/webapp/项目源码",
+		"/video/webapp/项目源码/src"
+	],
 	"file_history":
 	[
+		"/video/webapp/项目源码/src/components/disc/disc.vue",
+		"/video/webapp/项目源码/src/components/singer-detail/singer-detail.vue",
+		"/www/test/movie/server/tasks/trailer.js",
+		"/www/test/movie/server/crowler/video.js",
+		"/www/test/movie/server/index.js",
+		"/www/test/movie/server/tasks/api.js",
+		"/www/test/movie/server/database/init.js",
+		"/www/test/movie/server/database/scheme/movie.js",
+		"/Users/xiasiyong/Downloads/06046 Koa2框架从0开始构建预告片网站/douban-online/server/tasks/api.js",
+		"/www/test/movie/server/database/scheme/user.js",
+		"/www/test/movie/server/crowler/trailer-list.js",
+		"/www/test/movie/server/database/scheme/category.js",
+		"/www/test/movie/server/tasks/movie.js",
+		"/Users/xiasiyong/Downloads/06046 Koa2框架从0开始构建预告片网站/douban-online/server/database/schema/user.js",
+		"/www/test/movie/package.json",
+		"/Users/xiasiyong/Downloads/06046 Koa2框架从0开始构建预告片网站/douban-online/server/database/schema/category.js",
+		"/www/test/movie/server/config/index.js",
+		"/www/test/movie/server/crowler/qiniu.js",
 		"/www/vhosts80/wximg.91160.com.conf",
 		"/www/api/wechat-vue/src/store/modules/familymember.js",
 		"/www/api/wechat-vue/src/services/modules/familymember.js",
@@ -625,18 +648,11 @@
 		"/www/160dyf-com/vue2/src/store/modules/askout.js",
 		"/www/160dyf-com/vue2/src/store/mutation-types.js",
 		"/www/api/wechat-vue/build/webpack.base.conf.js",
-		"/www/test/movie/server/index.js",
 		"/www/test/movie/server/views/index.pug",
-		"/www/test/movie/server/crowler/trailer-list.js",
-		"/www/test/movie/server/crowler/video.js",
-		"/www/test/movie/server/tasks/movie.js",
-		"/www/test/movie/server/tasks/trailer.js",
-		"/www/test/movie/server/tasks/api.js",
 		"/www/test/movie/react/index.js",
 		"/www/test/movie/react/app.js",
 		"/www/test/movie/parcel/css/style.css",
 		"/www/test/movie/parcel/css/style.cdd",
-		"/www/test/movie/package.json",
 		"/www/test/movie/server/views/includes/script.pug",
 		"/www/test/movie/server/views/includes/style.pug",
 		"/www/test/movie/server/views/layout/default.pug",
@@ -704,18 +720,7 @@
 		"/www/test1/build/webpack.prod.conf.js",
 		"/www/test1/config/index.js",
 		"/www/test2/config/index.js",
-		"/www/test2/dist/static/js/app.b22ce679862c47a75225.js",
-		"/www/resume/index.js",
-		"/Users/xiasiyong/Downloads/web前端开发工程师--夏思勇--13691690284.html",
-		"/www/resume/index.html",
-		"/www/resume/css/style.css",
-		"/www/resume/css/reset.css",
-		"/www/resume/css/base.css",
-		"/Users/xiasiyong/Downloads/bluebird-master/test.html",
-		"/Users/xiasiyong/Downloads/PhotoSwipe-master/index.html",
-		"/video/Vue+Node+MongoDB高级全栈实战开发/n1fpov/server/crawler/wikiData.js",
-		"/www/comic/app.js",
-		"/www/cmmic/ecosystem.config.js"
+		"/www/test2/dist/static/js/app.b22ce679862c47a75225.js"
 	],
 	"find":
 	{
@@ -726,6 +731,8 @@
 		"height": 101.0,
 		"where_history":
 		[
+			"/video/webapp/项目源码/src",
+			"/www/test/movie/server"
 		]
 	},
 	"find_state":
@@ -733,6 +740,43 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"bg-image",
+			"data",
+			"doubanId",
+			"video",
+			"data",
+			"new",
+			"''},\n",
+			"summay",
+			"attr",
+			"Movie",
+			"console.log(1)",
+			"')\n",
+			"next",
+			"lockUntil",
+			"loginAttempts",
+			"LoginAttempts",
+			"loginAttempts",
+			"LOCK_TIME",
+			"MAX_LOGIN_ATTEMPTS",
+			"SALT_WORK_FACTORY",
+			"Scheme",
+			"const",
+			"Mixed",
+			"movie",
+			"Movie",
+			"movie",
+			"Movie",
+			"movie",
+			"bcrpt",
+			"LOCK_TIME",
+			"that",
+			"movie",
+			"Movie",
+			"movie",
+			"movieScheme",
+			"coverData",
+			"uploadFile"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -747,6 +791,18 @@
 		"whole_word": false,
 		"wrap": true
 	},
+	"folders":
+	[
+		{
+			"path": "/www/test/movie"
+		},
+		{
+			"path": "/Users/xiasiyong/Downloads/06046 Koa2框架从0开始构建预告片网站/douban-online"
+		},
+		{
+			"path": "/video/webapp/项目源码"
+		}
+	],
 	"groups":
 	[
 		{
@@ -832,7 +888,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 347.0,
+	"side_bar_width": 278.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

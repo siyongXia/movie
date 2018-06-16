@@ -1,22 +1,27 @@
 const Koa = require('koa')
 const { resolve } = require('path')
-const { connect, initSchemes } = require('./database/init')
-
-console.log(initSchemes);
+const { connect, initSchemes, initAdmin } = require('./database/init')
+const router = require('./routes/movie')
 const views = require('koa-views')
 const Static = require('koa-static')
 const mongoose = require('mongoose')
 
 const app = new Koa()
 
+
+
+	
 ;(async () => {
 	await connect()
 	
 	initSchemes()
 
+	await initAdmin();
+
 	// require('./tasks/movie')
 	// require('./tasks/api')
-	require('./tasks/trailer')
+	// require('./tasks/trailer')
+	// require('./crowler/qiniu')
 
 })();
 
@@ -34,7 +39,7 @@ app.use(async (ctx, next) => {
 	})
 })
 
-app.listen(3002,(err) => {
+app.listen(3003,(err) => {
 	if(err) return console.log(err);
-	console.log('server listen at 3002 port')
+	console.log('server listen at 3003 port')
 })
